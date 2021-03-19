@@ -21,20 +21,21 @@ card:
 {{< myimage src="/img/mennecy2.jpg" >}}
 
 ***	
-	Bio: 
-		* Formations:
-			* Ecole Normale Superieure de Bamako - Option Mathematiques
-			* DEA Algebre et theorie des nombres - Universite de Bordeaux
-			* Ingeniorat informatique - Universite de Bordeaux
+# Bio: 
+* Formations:
+  * Ecole Normale Superieure de Bamako - Option Mathematiques
+  * DEA Algebre et theorie des nombres - Universite de Bordeaux
+  * Ingeniorat informatique - Universite de Bordeaux
 
-		* Experiences Professionelles:
-			* Professeur de Mathematiques - Bordeaux, Cote d'Ivoire
-			* Consultant informatiques - Digital Equipment, Compaq et HP
-***
+* Experiences Professionelles:
+  * Professeur de Mathematiques - Bordeaux, Cote d'Ivoire
+  * Consultant informatiques - Digital Equipment, Compaq et HP
+  ***
 
 
-	Engagements:
-		De Gauche Sociale et humanitaire - Engage pour l'homme et son environnement
+# Engagements:
+* De Gauche Sociale et humanitaire 
+* Engage pour l'homme et son environnement
 ***
 
 
