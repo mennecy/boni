@@ -1,0 +1,4 @@
+{{- $src := .Get "src" -}} {{- with .Parent -}}
+
+<img src="{{$src}}" class="figure-img img-fluid rounded"> {{- else -}}
+<img src="{{$src}}" class="figure-img img-fluid rounded"> {{- end }}

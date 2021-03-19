@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="container-flex  centered  text-center text-black  bg-info pt-5 mt-5 mb-1">
+    <h1>
+        {{ with .Site.Params.Description }}
+        <span class="subheading">{{ . }}</span> {{ end }}
+    </h1>
+    {{ .Content }}
+</div>
+
+<p class="text-center text-info"> {{ .Title }}</p>
+
+{{ range .Pages }}
+<div class="container mx-auto bg-success">
+    <div class="row mx-lg-n5">
+        <div class="col py-3 px-lg-5 border bg-light">
+            <a href="{{ .Permalink }}">{{ .Title }}</a> {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

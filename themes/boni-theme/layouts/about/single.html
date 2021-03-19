@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Une Alternative pour Mennecy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|shadow-multiple">
+    <style>
+        body {
+            font-family: "Sofia", serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <div class="container-fluid bg-info pt-5 mt-5">
+        <h1 class="text-center"> {{ .Title }}</h1>
+        <span> {{ .Content }}</span>
+    </div>
+
+    <div class="container-fluid ">
+
+        <div class="pager fancybox-button--arrow_left  bg-info right float-right fixed-bottom">
+            <button type="button" class="pagination__item pagination__item--previous btn btn-danger">
+    <a class="btn btn-lg cc-btn-default{{if not .PrevInSection}} disabled{{end}}" href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}">Suivant</a>
+    </button>
+
+
+            <button type="button" class="pagination__item pagination__item--next  btn btn-danger">
+    <a class="btn btn-lg cc-btn-default{{if not .NextInSection}} disabled{{end}}" href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}">Precedent</a>
+    </button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
