@@ -24,7 +24,7 @@ ___
 
 * [Liste de presence pour la formation d'accoucheuses](/Boni/liste-presence--formation2020.pdf)
 
-* [Lettre de rentree MEB 2020](/Boni/LettrederentréeMEBsept2020.pdf)
+
 
 ___
 # Voeux
