@@ -7,7 +7,7 @@ paginate = 6
 image = "/Boni/oni/small-meb.jpg"
 description = "Solidarite Mennecy Echange Boni"
 enableInlineShortcodes = "true"
-
+#### markup
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
