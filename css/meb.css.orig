@@ -1,0 +1,32 @@
+.active {
+    color: white;
+}
+
+.nav-link .nav-link {
+    color: red;
+    background-color: red;
+}
+
+.dropdown {
+    background: transparent !important;
+    color: #ffffff;
+}
+
+option {
+    /* Whatever color  you want */
+    background-color: #82caff;
+}
+
+#nname {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    -webkit-appearance: menubar;
+}
+
+@media (max-width:767px) {
+    .navbar-nav .open .dropdown-menu {
+        background-color: #fff;
+    }
+}
