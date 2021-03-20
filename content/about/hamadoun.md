@@ -22,21 +22,23 @@ card:
 
 ***	
 > **Bio:** 
-> * Formations:
-    * Ecole Normale Superieure de Bamako - Option Mathematiques
-    * DEA Algebre et theorie des nombres - Universite de Bordeaux
-    * Ingeniorat informatique - Universite de Bordeaux
->
-> * Experiences Professionelles:
-    * Professeur de Mathematiques - Bordeaux, Cote d'Ivoire
-    * Consultant informatiques - Digital Equipment, Compaq et HP
+* Formations:
+  * Ecole Normale Superieure de Bamako - Option Mathematiques
+  * DEA Algebre et theorie des nombres - Universite de Bordeaux
+  * Ingeniorat informatique - Universite de Bordeaux
+
+* Experiences Professionelles:
+  * Professeur de Mathematiques - Bordeaux, Cote d'Ivoire
+  * Consultant informatiques - Digital Equipment, Compaq et HP
   ***
-  >
-> **Engagements:**
+
+
+> Engagements:
 * De Gauche Sociale et humanitaire 
 * Engage pour l'homme et son environnement
-
 ***
+
+
 
 [twitter](https://www.twitter.com/@HamadounDicko) <br>
 email: dicko.hamadoun@gmail.com
