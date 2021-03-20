@@ -21,7 +21,7 @@ card:
 {{< myimage src="/img/mennecy2.jpg" >}}
 
 ***	
-# Bio: 
+> **Bio:** 
 * Formations:
   * Ecole Normale Superieure de Bamako - Option Mathematiques
   * DEA Algebre et theorie des nombres - Universite de Bordeaux
@@ -33,7 +33,7 @@ card:
   ***
 
 
-# Engagements:
+> **Engagements:**
 * De Gauche Sociale et humanitaire 
 * Engage pour l'homme et son environnement
 ***
