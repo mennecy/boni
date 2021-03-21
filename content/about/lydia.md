@@ -1,7 +1,7 @@
 ---
 title: "Lydia Vandel"
 date: 2021-01-25T22:35:49+01:00
-draft: true
+draft: false
 author: "Hamadoun Dicko"
 moods: ["meb", "Mennecy"]
 categories: ["meb", "membre du CA"]

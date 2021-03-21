@@ -1,7 +1,7 @@
 ---
 title: "Denise Naveau"
 date: 2021-01-25T23:39:24+01:00
-draft: true
+draft: false
 author: "Hamadoun Dicko"
 tags: ["meb", "Mennecy"]
 moods: ["Mennecy"]

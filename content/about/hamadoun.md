@@ -7,6 +7,7 @@ moods: ["douentza"]
 categories: ["Gauche", "meb", "membre du CA"]
 image: ""
 description: "Pour une ville sociale et ecologique"
+keywords: "meb Mennecy Echange Boni"
 author:
   given_name: Hamadoun
   family_name: Dicko
@@ -37,7 +38,7 @@ card:
 * De Gauche Sociale et humanitaire 
 * Engage pour l'homme et son environnement
 ***
-Mon :heart: bat pour la gauche sociale, humanitaire et solidaire
+
 
 
 [twitter](https://www.twitter.com/@HamadounDicko) <br>

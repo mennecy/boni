@@ -1,7 +1,7 @@
 ---
 title: "Marie-France Giband"
 date: 2021-01-25T22:35:31+01:00
-draft: true
+draft: false
 author: "Hamadoun Dicko"
 tags: ["mennecy", "meb"]
 moods: ["Mennecy"]
