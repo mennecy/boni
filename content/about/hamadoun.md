@@ -28,8 +28,8 @@ card:
   * Ingeniorat informatique - Universite de Bordeaux
 
 * Experiences Professionelles:
-  * Professeur de Mathematiques - Bordeaux, Cote d'Ivoire
-  * Consultant informatiques - Digital Equipment, Compaq et HP
+  * Professeur de Mathematiques - Bamako (Mali), Bordeaux, Cote d'Ivoire
+  * Consultant informatiques - Digital Equipment Corporation (&copy;DEC), Compaq et HP (Hewlett Packard)
   ***
 
 
