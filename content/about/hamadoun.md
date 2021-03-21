@@ -36,6 +36,7 @@ card:
 > Engagements:
 * De Gauche Sociale et humanitaire 
 * Engage pour l'homme et son environnement
+* mon :heart: bat pour la gauche sociale, humanitaire et solidaire
 ***
 
 
