@@ -36,9 +36,8 @@ card:
 > Engagements:
 * De Gauche Sociale et humanitaire 
 * Engage pour l'homme et son environnement
-* mon :heart: bat pour la gauche sociale, humanitaire et solidaire
 ***
-
+Mon :heart: bat pour la gauche sociale, humanitaire et solidaire
 
 
 [twitter](https://www.twitter.com/@HamadounDicko) <br>
