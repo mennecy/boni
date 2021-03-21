@@ -29,7 +29,7 @@ card:
 
 * Experiences Professionelles:
   * Professeur de Mathematiques - Bamako (Mali), Bordeaux, Cote d'Ivoire
-  * Consultant informatiques - Digital Equipment Corporation (&copy;DEC), Compaq et HP (Hewlett Packard)
+  * Consultant informatiques - Digital Equipment Corporation (DEC&copy;), Compaq&copy; et HP&copy; (Hewlett Packard&copy;)
   ***
 
 
