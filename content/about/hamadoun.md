@@ -3,7 +3,7 @@ title: "Hamadoun Dicko"
 date: 2019-11-05T15:44:50+01:00
 draft: false
 tags: ["ps", "meb", "mennecy"]
-moods: [Douentza", "Diona"]
+moods: [Douentza", "Diona", "Bamako", "Bordeaux", "Paris", "Sophia-Antipolis"]
 categories: ["Gauche", "meb", "membre du CA"]
 image: ""
 description: "Pour une ville sociale et ecologique"

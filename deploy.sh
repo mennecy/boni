@@ -33,9 +33,9 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # ------------------
 # Add a file in your project such as README.md
 
-git add .
-git commit -m "Somme changes"
+# git add .
+# git commit -m "Somme changes"
 # git branch -M main   
 # Push source and build repos.
-git push -u origin master
+# git push -u origin master
 
