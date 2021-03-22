@@ -37,5 +37,5 @@ git add .
 git commit -m "Somme changes"
 # git branch -M main   
 # Push source and build repos.
-git push origin master
+git push -u origin master
 
