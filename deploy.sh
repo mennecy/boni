@@ -1,11 +1,11 @@
 #!/bin/sh
 # echo "# boni" >> README.md
 # git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/mennecy/boni.git
-git push -u origin main
+# git add README.md
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/mennecy/boni.git
+# git push -u origin main
 
 # If a command fails then the deploy stops
 set -e
