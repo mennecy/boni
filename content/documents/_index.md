@@ -11,7 +11,7 @@ images:
 ___
 <!--  this shortcode renders images under contents directories 
 Some bug hover-effect ?? -->
-{{< myshortcode bg-warning  "Quelques images de Paris, Mennecy (France) et Boni (Mali)">}}
+{{< myshortcode bg-warning  "Quelques images de Mennecy (France) et Boni (Mali)">}}
     {{< gallery caption-effect="fade" hover-effect="grow" >}}
 {{</myshortcode>}}
 
