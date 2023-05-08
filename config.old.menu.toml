@@ -1,0 +1,178 @@
+# baseURL = "https://mennecy-echange-boni.github.io/"
+relativeURLs = true
+languageCode = "en-us"
+title = "Mennecy Echanges Boni"
+# theme = "boni-theme"
+# theme = "github.com/hugoinaction/Eclectic"
+
+paginate = 6
+image = "/Boni/oni/small-meb.jpg"
+description = "Solidarite Mennecy Echange Boni"
+enableInlineShortcodes = "true"
+enableEmoji = true
+#### markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
+### taxonomie
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    mood = "moods" 
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
+
+# Default JPEG quality setting. Default is 75.
+quality = 75
+
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"
+
+# Default background color.
+# Hugo will preserve transparency for target formats that supports it,
+# but will fall back to this color for JPEG.
+# Expects a standard HEX color string with 3 or 6 digits.
+# See https://www.google.com/search?q=color+picker
+bgColor = "#ffffff"
+
+[imaging.exif]
+ # Regexp matching the fields you want to Exclude from the (massive) set of Exif info
+# available. As we cache this info to disk, this is for performance and
+# disk space reasons more than anything.
+# If you want it all, put ".*" in this config setting.
+# Note that if neither this or ExcludeFields is set, Hugo will return a small
+# default set.
+includeFields = ""
+
+# Regexp matching the Exif fields you want to exclude. This may be easier to use
+# than IncludeFields above, depending on what you want.
+excludeFields = ""
+
+# Hugo extracts the "photo taken" date/time into .Date by default.
+# Set this to true to turn it off.
+disableDate = false
+
+# Hugo extracts the "photo taken where" (GPS latitude and longitude) into
+# .Long and .Lat. Set this to true to turn it off.
+disableLatLong = false
+
+
+### params
+[params]
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "Mennecy (France) & Boni (Mali) : Deux Villes solidaires"
+  author = "Mennecy Echanges Boni"
+  email = "clhroumejon@aol.com"
+  address = "9, rue du Parc - 91540 Mennecy"
+  tel= "+33678555367"
+  avatarurl = "/Boni/small-meb.jpg"
+  presentation = "Qui Sommes-nous?"
+
+  ### Analytics
+  Ganalytics = ""
+  # This will load all the CSS defined in the list
+  # customCSS = ["<absolute path to CSS>", "/static/css/test.css", "<or just load it off the internet>"]
+
+### params social
+[[params.social]]
+    name = "facebook"
+    icon = "fab fa-facebook"
+    weight = 1
+    url = "https://www.facebook.com/dicko.hamadoun.3"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/@HamadounDicko"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/hamadoundicko"
+
+[menu]
+
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = -200
+  [[menu.main]]
+    name = "Membre du bureau"
+    url = "/about/"
+    pre = "<i class='fa fa-chevron-right'></i>"
+    weight = -180
+
+  [[menu.main]]
+    name = "Documents"
+    url = "/documents/"
+    pre = "<i class='fa fa-folder'></i>"
+    weight = -160
+
+
+  
+
+[module]
+[[module.imports]]
+  disable = false
+  ignoreConfig = false
+  ignoreImports = false
+  path = 'github.com/mennecy/boni'
+
+
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'layouts'
+  target = 'layouts'
+[[module.mounts]]
+  source = 'data'
+  target = 'data'
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'i18n'
+  target = 'i18n'
+[[module.mounts]]
+  source = 'archetypes'
+  target = 'archetypes'
+  
+  [[module.mounts]]
+  source = 'shortcodes'
+  target = 'shorcodes'
+
+
+
+  
+
+
+

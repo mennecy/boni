@@ -1,0 +1,30 @@
+<!-- menu header -->
+{{ partial "header.html" . }}
+
+
+<div class="container-flex">
+    <div class="row row-cols-2">
+        {{ range .Pages }}
+        <a class="btn btn-link" href="{{ .RelPermalink }}" role="button">{{ .Title }}</a> {{ end }}
+
+    </div>
+</div>
+
+
+<div class="container-fluid pt-1">{{ .Content }}</div>
+
+<!-- Manipulating images in hugo this is listing all images in Page Bundle  
+        Allow to retrieve all the page resources by type. -->
+<h1 class="text-decoration-underline text-center bg-info"> {{ .Page.Params.images.imageB }}</h1>
+
+<div class="gallery hovereffect">
+    {{ with .Resources.ByType "image" }} {{ range . }} {{ $original := . }} {{ $alt := $original }}
+    <a data-fancybox="x" href="{{ $original }}">
+        <img src="{{ $original }}">
+    </a>
+    {{ end }} {{ end }}
+</div>
+
+<!-- add footer -->
+
+<h1 class="text-decoration-underline text-center bg-success">{{ partial "footer.html" . }}</h1>

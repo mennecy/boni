@@ -1,0 +1,90 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+
+<head>
+
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|shadow-multiple">
+
+    <style>
+        body {
+            font-family: "Sofia", serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    {{ partial "header.html" . }}
+=======
+
+<body>
+
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    {{ partial "menu.html" (dict "menuID" "footer" "page" .) }}
+    
+    <!-- old header  {{ partial "header.html" . }} -->
+>>>>>>> 6def25a (scratch)
+
+    <div class="container-flex  centered  text-center text-black  bg-info pt-5 mt-5">
+        <h1>
+            {{ with .Site.Params.Description }}
+            <span class="subheading">{{ . }}</span> {{ end }}
+        </h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row border-primary">
+            <div class="col-sm-12">
+                <p>{{ .Content }}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-decoration-underline text-center bg-body">{{ partial "footer.html" . }}</h1>
+
+
+
+    <!-- -->
+    {{ $title := .Title }} {{ range .Site.Pages }}
+    <ul>
+        <li><a href="{{ .URL }}"> {{ .Title }}</a></li>
+    </ul>
+
+    {{ end }}
+
+    <br>
+    <!-- List Tags in a Single Page Template -->
+    <p>List Tags in a Single Page Template </p>
+    <ul>
+        {{ range (.GetTerms "tags") }}
+        <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+    </ul>
+
+
+    <!--  accessing the data -->
+
+    {{ range .Site.Data.states}} {{.name }} a pour capitale: {{ .capital }} latitude: {{ .lat }} et longitude: {{ .long }}<br> {{ end }}
+
+
+    </br>
+    {{ range .Site.Data.meb.adherents}} {{.nom }} a pour fonction: {{ .fonction }} tel: {{ .Tel }} et mail: {{ .email }}<br> {{ end }}
+
+    <!-- Put this right before the </body> closing tag -->
+
+
+
+
+</body>
+
+<<<<<<< HEAD
+</html>
+=======
+>>>>>>> 6def25a (scratch)

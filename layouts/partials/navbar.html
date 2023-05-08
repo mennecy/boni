@@ -1,0 +1,27 @@
+<ul class="nav nav-pills">
+    <!-- loop here to get menu from the config file -->
+    {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+    <li class="nav-item active">
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ else }}
+    <li class="nav-item">
+        <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }} {{ end }}
+    <!-- end of the loop in the menu-->
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://www.lemonde.fr" target="_blank">Le Journal le Monde</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.mennecy.fr" target="_blank">Site officiel de mennecy</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.ademe.fr/demain-territoire" target="_blank">Ademe - Agence de l'Environnement et de la Maîtrise de l'Énergie</a>
+            <div class="dropdown-divider"></div>
+
+        </div>
+    </li>
+
+</ul>

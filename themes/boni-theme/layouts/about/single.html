@@ -1,0 +1,22 @@
+ {{ partial "header.html" . }}
+
+<body>
+
+    <div class="container-fluid bg-info">
+        <h1 class="text-center"> {{ .Title }}</h1>
+        <span> {{ .Content }}</span>
+    </div>
+
+    <div class="container-fluid ">
+
+        <div class="pager fancybox-button--arrow_left  bg-info right float-right fixed-bottom">
+            <button type="button" class="pagination__item pagination__item--previous btn btn-danger">
+    <a class="btn btn-lg cc-btn-default{{if not .PrevInSection}} disabled{{end}}" href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}">Suivant</a>
+    </button>
+
+
+            <button type="button" class="pagination__item pagination__item--next  btn btn-danger">
+    <a class="btn btn-lg cc-btn-default{{if not .NextInSection}} disabled{{end}}" href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}">Precedent</a>
+    </button>
+        </div>
+    </div>
