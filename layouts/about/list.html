@@ -1,129 +1,100 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- Load Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
-</head>
-
 <body>
-    {{ partial "header.html" . }}
+  {{ partial "header.html" . }}
 
-    <body style="text-align: center;">
-        <div class="container-flex  centered  text-center text-black bg-light ">
-
-            <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"> 
-                Qui sommes nous?
-            </button>
-            </p>
-        </div>
-
-        <div class="collapse" id="collapseExample">
-<<<<<<< HEAD
-
-            <!-- -->
-=======
->>>>>>> 6def25a (scratch)
-            {{ range .Pages }}
-            <div class="card-group display text-center pb-1">
-                <div class="card" style="width:18rm">
-                    <!--
-                    <img src="/Boni/small-meb.jpg" class="card-img-top" alt="">
-                    -->
-                    <div class="card-body">
-                        <div class="card-header">
-                            <h1 href="{{ .RelPermalink }}">{{ .Title }}</h1>
-                        </div>
-                        <h5 class="card-title">{{ .Params.card.membre}}</h5>
-                        <p class="card-text">{{ .Params.card.presentation }}</p>
-                        <a href="{{ .RelPermalink }}" class="btn btn-primary">Mieux me connaitre</a>
-
-                        <div class="card-footer text-muted">
-                            <blockquote class="blockquote mb-0">
-                                <p>{{ .Params.card.devise }}</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<<<<<<<
-            
-            {{ end }}
-        </div>
-
-
-        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-
-        {{ range $paginator.Pages }}
-          <!-- Render your list items here -->
-
-
-          <div class="card" style="width:18rm">
-            
-            <img src="/Boni/small-meb.jpg" class="card-img-top" alt="">
-            
-            <div class="card-body">
-                <div class="card-header">
-                    <h1 href="{{ .RelPermalink }}">{{ .Title }}</h1>
-                </div>
-                <h5 class="card-title">{{ .Params.card.membre}}</h5>
-                <p class="card-text">{{ .Params.card.presentation }}</p>
-                <a href="{{ .RelPermalink }}" class="btn btn-primary">Mieux me connaitre</a>
-
-                <div class="card-footer text-muted">
-                    <blockquote class="blockquote mb-0">
-                        <p>{{ .Params.card.devise }}</p>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
+  <body style="text-align: center">
+    <div class="container-flex centered text-center text-black bg-light">
+      <p>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+        >
+          Qui sommes nous?
+        </button>
+      </p>
     </div>
 
+    <div class="collapse" id="collapseExample">
+      {{ range .Pages }}
+      <div class="card-group display text-center pb-1">
+        <div class="card" style="width: 18rm">
+          <!--
+                    <img src="/Boni/small-meb.jpg" class="card-img-top" alt="">
+                    -->
+          <div class="card-body">
+            <div class="card-header">
+              <h1 href="{{ .RelPermalink }}">{{ .Title }}</h1>
+            </div>
+            <h5 class="card-title">{{ .Params.card.membre}}</h5>
+            <p class="card-text">{{ .Params.card.presentation }}</p>
+            <a href="{{ .RelPermalink }}" class="btn btn-primary"
+              >Mieux me connaitre</a
+            >
 
-        {{ end }}
-        
-        {{ if gt $paginator.TotalPages 1 }}
-          <nav class="pagination">
-            {{ if $paginator.HasPrev }}
-              <a href="{{ $paginator.Prev.URL }}" class="pagination-previous">Previous</a>
-            {{ end }}
-            {{ if $paginator.HasNext }}
-              <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next</a>
-            {{ end }}
-            <ul class="pagination-list">
-              {{ range $paginator.Pagers }}
-                <li><a href="{{ .URL }}" class="pagination-link{{ if eq . $paginator }} is-current{{ end }}">{{ .PageNumber }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        {{ end }}
-        
-        
-
-
-        
-        <!-- add footer -->
-        <div class="text-decoration-underline text-center bg-body  pt-0">{{ partial "footer.html" . }}</div>
-
-
-
-
-
-
-
-        
-=======
-            {{ end }}
+            <div class="card-footer text-muted">
+              <blockquote class="blockquote mb-0">
+                <p>{{ .Params.card.devise }}</p>
+              </blockquote>
+            </div>
+          </div>
         </div>
+      </div>
+      {{ end }}
+    </div>
 
-        <!-- add footer -->
-        <div class="text-decoration-underline text-center bg-body  pt-0">{{ partial "footer.html" . }}</div>
->>>>>>> 6def25a (scratch)
-    </body>
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "about") }} {{ range
+    $paginator.Pages }}
+    <!-- Render your list items here -->
+    <div class="card" style="width: 18rm">
+      <!-- 
+            <img src="/Boni/small-meb.jpg" class="card-img-top" alt="">
+            
+      <div class="card-body">
+        <div class="card-header">
+          <h1 href="{{ .RelPermalink }}">{{ .Title }}</h1>
+        </div>
+        <h5 class="card-title">{{ .Params.card.membre}}</h5>
+        <p class="card-text">{{ .Params.card.presentation }}</p>
+        <a href="{{ .RelPermalink }}" class="btn btn-primary"
+          >Mieux me connaitre</a>
 
-</html>
+        <div class="card-footer text-muted">
+          <blockquote class="blockquote mb-0">
+            <p>{{ .Params.card.devise }}</p>
+          </blockquote>
+        </div>
+      </div>-->
+      {{ end }}
+
+      <!-- add footer -->
+      <div class="text-decoration-underline text-center bg-body pt-0">
+        {{ partial "footer.html" . }}
+      </div>
+
+      <!-- pagination -->
+      {{ if gt $paginator.TotalPages 1 }}
+      <nav class="pagination">
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="pagination-previous"
+          >Previous</a
+        >
+        {{ end }} {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next</a>
+        {{ end }}
+        <ul class="pagination-list">
+          {{ range $paginator.Pagers }}
+          <li>
+            <a
+              href="{{ .URL }}"
+              class="pagination-link{{ if eq . $paginator }} is-current{{ end }}"
+              >{{ .PageNumber }}</a
+            >
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+      {{ end }}
+    </div>
+  </body>
+</body>

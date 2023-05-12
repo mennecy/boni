@@ -1,65 +1,32 @@
-<<<<<<< HEAD
- {{ partial "header.html" . }}
-
-
-
-    <div class="container-fluid bg-info">
-        <h1 class="text-center"> {{ .Title }}</h1>
-        <span> {{ .Content }}</span>
-    </div>
-
-    
-    <div class="container-flex">
-        <div class="pager right float-right fixed-bottom">
-            <button type="button" class="pagination__item pagination__item--previous btn btn-danger">
-                <a class="btn btn-lg cc-btn-default{{if not .PrevInSection}} disabled{{end}}" href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}">&laquo;</a>
-            </button>
-
-            <button type="button" class="pagination__item pagination__item--next  btn btn-danger">
-                <a class="btn btn-lg cc-btn-default{{if not .NextInSection}} disabled{{end}}" href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}">&raquo;</a>
-            </button>
-        </div>
-    </div>
-
-
-  
-=======
 {{ partial "header.html" . }}
 
-<body>
-  <div class="container-fluid bg-info">
-    <h1 class="text-center">{{ .Title }}</h1>
-    <span> {{ .Content }}</span>
-  </div>
+<div class="container-fluid bg-info">
+  <h1 class="text-center">{{ .Title }}</h1>
+  <span> {{ .Content }}</span>
+</div>
 
-  {{/* related {{ partial "related.html"}}*/}}
-
-  <div class="container-fluid">
-    <div
-      class="pager fancybox-button--arrow_left bg-info right float-right fixed-bottom"
+<div class="container-flex">
+  <div class="pager right float-right fixed-bottom">
+    <button
+      type="button"
+      class="pagination__item pagination__item--previous btn btn-danger"
     >
-      <button
-        type="button"
-        class="pagination__item pagination__item--previous btn btn-danger"
+      <a
+        class="btn btn-lg cc-btn-default{{if not .PrevInSection}} disabled{{end}}"
+        href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}"
+        >&laquo;</a
       >
-        <a
-          class="btn btn-lg cc-btn-default{{if not .PrevInSection}} disabled{{end}}"
-          href="{{if .PrevInSection}}{{.PrevInSection.Permalink}}{{end}}"
-          >Suivant</a
-        >
-      </button>
+    </button>
 
-      <button
-        type="button"
-        class="pagination__item pagination__item--next btn btn-danger"
+    <button
+      type="button"
+      class="pagination__item pagination__item--next btn btn-danger"
+    >
+      <a
+        class="btn btn-lg cc-btn-default{{if not .NextInSection}} disabled{{end}}"
+        href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}"
+        >&raquo;</a
       >
-        <a
-          class="btn btn-lg cc-btn-default{{if not .NextInSection}} disabled{{end}}"
-          href="{{if .NextInSection}}{{.NextInSection.Permalink}}{{end}}"
-          >Precedent</a
-        >
-      </button>
-    </div>
+    </button>
   </div>
-</body>
->>>>>>> 6def25a (scratch)
+</div>
